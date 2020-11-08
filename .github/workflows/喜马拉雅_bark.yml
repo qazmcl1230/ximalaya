@@ -1,6 +1,7 @@
 name: 喜马拉雅极速版_bark
 
 on:
+  workflow_dispatch
   schedule:
     - cron: '*/30 * * * * '
   watch:
