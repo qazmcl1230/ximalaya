@@ -28,7 +28,7 @@ if "XMLY_SPEED_COOKIE" in os.environ:
     判断是否运行自GitHub action,"XMLY_SPEED_COOKIE" 该参数与 repo里的Secrets的名称保持一致
     """
     print("执行自GitHub action")
-    xmly_speed_cookie = os.environ["XMLY_SPEED_COOKIE"]
+    xmly_speed_cookie = os.environ["_xmLog=xm_kg3ildqoxdz9bj; 1&_device=iPhone&45A4B5FD-6706-45A4-9FAB-01A3ADAA3BC5&1.1.10; 1&_token=198997435&A3D187F0340NC12C70CB0ED00BBC571E246167535C7CD7DED67F88705FE68935E0606AAAE40A96ME7EED0FE07BC130_; NSUP=; XUM=45A4B5FD-6706-45A4-9FAB-01A3ADAA3BC5; ainr=0; c-oper=%E8%81%94%E9%80%9A; channel=ios-b1; device_model=iPhone 8; idfa=45A4B5FD-6706-45A4-9FAB-01A3ADAA3BC5; impl=com.ximalaya.tingLite; ip=2408:8520:1009:1980:1e:32e:100::; net-mode=4G; res=750%2C1334"]
     bark_machine_code = os.environ["BARK_MACHINE_CODE"]
     cookiesList = []  # 重置cookiesList
     for line in xmly_speed_cookie.split('\n'):
@@ -62,9 +62,9 @@ def str2dict(str_cookie):
     return dict_cookie
 
 
-#if not cookiesList[0]:
-    #print("cookie为空 跳出X")
-    #exit()
+if not cookiesList[0]:
+    print("cookie为空 跳出X")
+    exit()
 mins = int(time.time())
 date_stamp = (mins-57600) % 86400
 utc_dt = datetime.utcnow()  # UTC时间
