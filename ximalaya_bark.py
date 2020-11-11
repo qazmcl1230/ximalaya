@@ -62,9 +62,9 @@ def str2dict(str_cookie):
     return dict_cookie
 
 
-if not cookiesList[0]:
-    print("cookie为空 跳出X")
-    exit()
+#if not cookiesList[0]:
+    #print("cookie为空 跳出X")
+    #exit()
 mins = int(time.time())
 date_stamp = (mins-57600) % 86400
 utc_dt = datetime.utcnow()  # UTC时间
