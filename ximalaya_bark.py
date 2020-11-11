@@ -15,7 +15,7 @@ import os
 # 使用参考 xmly_speed.md
 ###################################################
 # 对应方案2: 下载到本地,需要此处填写
-cookies1 = ""
+cookies1 = "_xmLog=xm_kg3ildqoxdz9bj; 1&_device=iPhone&45A4B5FD-6706-45A4-9FAB-01A3ADAA3BC5&1.1.10; 1&_token=198997435&A3D187F0340NC12C70CB0ED00BBC571E246167535C7CD7DED67F88705FE68935E0606AAAE40A96ME7EED0FE07BC130_; NSUP=; XUM=45A4B5FD-6706-45A4-9FAB-01A3ADAA3BC5; ainr=0; c-oper=%E8%81%94%E9%80%9A; channel=ios-b1; device_model=iPhone 8; idfa=45A4B5FD-6706-45A4-9FAB-01A3ADAA3BC5; impl=com.ximalaya.tingLite; ip=2408:8520:1009:1980:1e:32e:100::; net-mode=4G; res=750%2C1334"
 # 本地运行账号填写
 cookies2 = ""
 cookiesList = [cookies1, ]  # 多账号准备
@@ -599,9 +599,9 @@ def account(cookies):
     # shanghai_time = datetime.now(tz=cst_tz)
     # print(shanghai_time)
     # print(bj_dt.hour, bj_dt.minute)
-    if bj_dt.hour % 6 == 0 and bj_dt.minute <= 30:
+    if bj_dt.hour % 1 == 0 and bj_dt.minute <= 30:
         print('发送bark推送！')
-        bark_url = 'https://api.day.app/' + str(bark_machine_code) + '/' + bark_content
+        bark_url = 'https://api.day.app/74ieGfVZ4WHLxSvo99NiKa' + '/' + bark_content
         requests.get(bark_url)
     print(f"""
 喜马拉雅极速版
