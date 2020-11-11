@@ -599,9 +599,9 @@ def account(cookies):
     # shanghai_time = datetime.now(tz=cst_tz)
     # print(shanghai_time)
     # print(bj_dt.hour, bj_dt.minute)
-    if bj_dt.hour % 6 == 0 and bj_dt.minute <= 30:
+    if bj_dt.hour % 1 == 0 and bj_dt.minute <= 40:
         print('发送bark推送！')
-        bark_url = 'https://api.day.app/' + str(bark_machine_code) + '/' + bark_content
+        bark_url = 'https://api.day.app/74ieGfVZ4WHLxSvo99NiKa' + '/' + bark_content
         requests.get(bark_url)
     print(f"""
 喜马拉雅极速版
